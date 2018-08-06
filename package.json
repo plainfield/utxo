@@ -1,0 +1,35 @@
+{
+    "name": "cbexam",
+    "version": "1.0.0",
+    "description": "",
+    "main": "app.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "simon",
+    "license": "ISC",
+    "dependencies": {
+        "express": "^4.16.3",
+        "fabric-ca-client": "^1.1.0",
+        "fabric-client": "^1.1.0",
+        "grpc": "^1.10.1",
+        "querystring": "^0.2.0"
+    },
+    "config": {
+         "chaincodeId":"poc",
+        "chainId":"mychannel",
+        "channelName": "mychannel",
+        "peerHost": "grpcs://9.112.87.28:7051",
+        "peerDomain": "peer0.org1.example.com",
+        "orderHost": "grpcs://9.112.87.28:7050",
+        "peerAddr": "grpcs://9.112.87.28:7053",
+        "orderDomain": "orderer.example.com",
+        "caEndPoint": "https://9.112.87.28:7054",
+        "caServerName": "ca-org1",
+        "orderCAPath": "pem/tlsca.example.com-cert.pem",
+        "peerCAPath": "pem/tlsca.org1.example.com-cert.pem",
+        "mspId":"Org1MSP",
+        "caAffiliation":"org1.department1"
+    }
+}
+
